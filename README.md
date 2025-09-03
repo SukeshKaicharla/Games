@@ -71,4 +71,4 @@ This project is licensed under the [MIT License](LICENSE).
 * https://rawg.io/ `for game DB api`
 * vite
 ---
-make with ~~lust~~ love 💖 by @sameerkali
+make with ~~lust~~ love 💖 by @sameerkali.
