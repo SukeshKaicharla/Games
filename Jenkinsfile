@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 dir("${WORK_DIR}") {
-                    git branch: 'main', url: 'https://github.com/SukeshKaicharla/Indie_Gems_Portal.git'
+                    git branch: 'main', url: 'https://github.com/SukeshKaicharla/Games.git'
                 }
             }
         }
