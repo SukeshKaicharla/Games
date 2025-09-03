@@ -64,19 +64,20 @@ pipeline {
                 }
             }
         }
-    }
-    stage('Docker Swarm Deploy') {
+
+        stage('Docker Swarm Deploy') {
             steps {
                 sh '''
-                    docker service update --image indie-gems gameserv || \
-                    docker service create --name gameserv -p 8009:8080 --replicas 10 indie-gems
+                    docker service update --image ${IMAGE_NAME}:${IMAGE_TAG} gameserv || \
+                    docker service create --name gameserv -p 8009:8080 --replicas 10 ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
-        }
-                                        
+        }
+    }
+
     post {
         always {
-            echo "✅ Pipeline finished! Check http://13.204.85.107:3000"
+            echo "✅ Pipeline finished! Check http://13.204.85.107:${PORT}"
         }
     }
 }
