@@ -8,7 +8,7 @@ pipeline {
         IMAGE_TAG  = "latest"
         CONTAINER_NAME = "indie-gems-container"
         DOCKER_HUB_USER = "sukesh632k"
-        PORT = "3000"   // External port for app
+        PORT = "4000"   // External port for app
     }
 
     stages {
