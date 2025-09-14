@@ -6,7 +6,7 @@ pipeline {
         IMAGE_NAME = "indie-gems"
         IMAGE_TAG  = "latest"
         CONTAINER_NAME = "indie-gems-container"
-        PORT = "3000"   // External port for app
+        PORT = "3000"   // External port for appppp
     }
 
     stages {
@@ -43,7 +43,7 @@ pipeline {
 
     post {
         always {
-            echo "Pipeline finished! Check http://13.204.85.107:3000"
+            echo "Pipeline finished and updated! Check http://13.204.85.107:3000"
         }
     }
 }
