@@ -75,7 +75,8 @@ pipeline {
 
     post {
         always {
-            echo "✅ Pipeline finished! Check http://13.204.85.107:${PORT}"
+            echo "Pipeline finished and updated! Check http://13.204.85.107:3000"
+
         }
     }
 }
