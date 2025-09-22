@@ -19,7 +19,10 @@ pipeline {
                 }
             }
         }
-
+        stage('mvn')
+        {
+            sh 'mvn clean package'
+        }
         stage('Build Docker Image') {
             steps {
                 dir("${WORK_DIR}") {
